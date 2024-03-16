@@ -29,5 +29,5 @@ def evaluate(config):
     pass
 
 if __name__==("__main__"):
-    config=OmegaConf.load("./params.yaml")
+    config=OmegaConf.load("./scripts/params.yaml")
     evaluate(config)

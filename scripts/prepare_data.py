@@ -18,5 +18,7 @@ def prepare_data(config):
 
 
 if __name__=="__main__":
-    config= OmegaConf.load("./params.yaml")
+    config= OmegaConf.load("./scripts/params.yaml")
     prepare_data(config)
+
+
