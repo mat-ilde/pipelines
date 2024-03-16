@@ -6,17 +6,17 @@ data:
 
 features:
   vectorizer: count-vectorizer
-  train_features_save_path: ./data/train.joblib
-  test_features_save_path: ./data/test.joblib
+  train_features_save_path: ./result/train.joblib
+  test_features_save_path: ./result/test.joblib
 
 train:
   penalty: l2
   C: 1.0
   solver: lbfgs
   max_iter: 10000
-  model_save_path: ./data/model.joblib
+  model_save_path: ./result/model.joblib
 
 evaluate:
   metric: accuracy
-  results_save_path: ./data/results.yaml
+  results_save_path: ./result/evaluate_results.yaml
   

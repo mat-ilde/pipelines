@@ -21,7 +21,7 @@ def make_features(config):
 
     joblib.dump(train_inputs, config.features.train_features_save_path)
     joblib.dump(test_inputs, config.features.test_features_save_path)
-
+    print("Features extracted...")
 
 if __name__ == "__main__":
     config = OmegaConf.load("./scripts/params.yaml")
