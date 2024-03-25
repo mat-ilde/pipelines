@@ -4,7 +4,6 @@ import joblib
 import pandas as pd
 
 
-
 def train(config):
     print("Training...")
 
@@ -20,9 +19,6 @@ def train(config):
     model.fit(train_inputs, train_outputs)
     joblib.dump(model, config.train.model_save_path)
     print("Training done")
-    pass
-
-
 
 
 if __name__=="__main__":
